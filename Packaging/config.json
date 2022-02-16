@@ -1,0 +1,22 @@
+{
+  "processes": [
+    {
+      "executable": ".*",
+      "fixups": []
+    }
+  ],
+  "applications": [
+    {
+      "id": "UWPApp",
+      "executable": "UWP_APP.exe",
+      "startScript": {
+        "scriptExecutionMode": "-ExecutionPolicy RemoteSigned",
+        "scriptPath": "pre_install.ps1",
+        "showWindow": true,
+        "runInVirtualEnvironment": false,
+        "waitForScriptToFinish": true
+      }
+    }
+  ]
+}
+
